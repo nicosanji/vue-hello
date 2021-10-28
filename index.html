@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VUE-HELLO</title>
+    <!-- ORDINE: 1)css frame 2)my css 3)cript frame 4)my script-->
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- Script Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <!-- div collegato a Vue -->
+        <div class="container pt-2" id="titoloPag">
+            <!-- v-bind:class (variabile delle classi) -->
+            <h1 v-bind:class="testoH1Class">{{testoH1}}</h1>
+            <!-- v-bind:src (variabile dell'src dell'immagine) -->
+            <img v-bind:src="imgGlenn" v-bind:class="imgGlennClass" alt="quagmire-gif">
+        </div>
+
+    </main>
+
+</body>
+
+</html>
